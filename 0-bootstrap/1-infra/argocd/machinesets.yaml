@@ -29,6 +29,10 @@ spec:
             image: rhcos-49.84.202110081407-0-azure.x86_64.vhd
             zones:
               - 1
+            infraNodes:
+              nodeCount: 3
+            storageNodes:
+              nodeCount: 3
           # only for "vsphere" - ignored for other
           vsphere:
             networkName: ${VS_NETWORK}

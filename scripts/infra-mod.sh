@@ -102,7 +102,8 @@ else
 fi
 # platform=$(oc get -o jsonpath='{.status.platform}' infrastructure cluster | tr [:upper:] [:lower:])
 
-sed -i '' -e '/machinesets.yaml/s/^#//g' kustomization.yaml
+sed -i.bak  '/machinesets.yaml/s/^#//g' kustomization.yaml
+rm kustomization.yaml.bak 
     
 # edit argocd/machinesets.yaml
 echo " -  Updating machinesets"
@@ -157,10 +158,10 @@ popd
 pushd "${SCRIPTDIR}/.."
 
 echo "Updating Git"
-git add .
+#git add .
 
-git commit -m "Editing infrastructure definitions"
+#git commit -m "Editing infrastructure definitions"
 
-git push origin
+#git push origin
 
 popd
