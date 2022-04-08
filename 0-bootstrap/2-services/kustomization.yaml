@@ -51,8 +51,8 @@ resources:
  #- argocd/instances/ibm-infra-automation-instance.yaml
 
  # Ansible Automation Platform
- - argocd/operators/ansible-automation-platform-operator.yaml
- - argocd/instances/ansible-automation-platform-instance.yaml
+ #- argocd/operators/ansible-automation-platform-operator.yaml
+ #- argocd/instances/ansible-automation-platform-instance.yaml
 
  # OpenShift Virtualization (Can be used to host instana instance)
  #- argocd/operators/openshift-virtualization.yaml
