@@ -27,6 +27,8 @@ spec:
           cloud:
             region: australiaeast
             image: rhcos-49.84.202110081407-0-azure.x86_64.vhd
+            zones:
+              - 1
           # only for "vsphere" - ignored for other
           vsphere:
             networkName: ${VS_NETWORK}
