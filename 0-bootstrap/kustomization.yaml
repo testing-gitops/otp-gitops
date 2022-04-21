@@ -1,7 +1,7 @@
 resources:
  - 1-infra/1-infra.yaml
-# - 2-services/2-services.yaml
-# - 3-clusters/3-clusters.yaml
+ - 2-services/2-services.yaml
+ - 3-clusters/3-clusters.yaml
 # - 4-apps/4-apps.yaml
 # - 5-policies/5-policies.yaml
 patches:
