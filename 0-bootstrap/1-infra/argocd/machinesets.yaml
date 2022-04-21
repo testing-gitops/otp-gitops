@@ -28,9 +28,9 @@ spec:
             region: australiaeast
             image: rhcos-49.84.202110081407-0-azure.x86_64.vhd
             infraNodes:
-              nodeCount: 3
+              nodeCount: 1
             storageNodes:
-              nodeCount: 3
+              nodeCount: 1
           # only for "vsphere" - ignored for other
           vsphere:
             networkName: ${VS_NETWORK}
