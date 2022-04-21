@@ -21,8 +21,8 @@ resources:
 
  # Secrets Managment
  - argocd/instances/sealed-secrets.yaml
- - argocd/operators/external-secrets.yaml
- - argocd/instances/external-secrets.yaml
+ #- argocd/operators/external-secrets.yaml
+ #- argocd/instances/external-secrets.yaml
 
  # CICD
  #- argocd/operators/grafana-operator.yaml
@@ -77,10 +77,10 @@ resources:
  #- argocd/instances/rhsso-integration-argocd-instance.yaml
 
  # Red Hat Quay Registry
- - argocd/operators/quay-registry.yaml
+ #- argocd/operators/quay-registry.yaml
  #- argocd/instances/quay-registry-instance.yaml
- - argocd/operators/quay-container-security.yaml
- - argocd/operators/quay-bridge-operator.yaml
+ #- argocd/operators/quay-container-security.yaml
+ #- argocd/operators/quay-bridge-operator.yaml
 
 patches:
 - target:
