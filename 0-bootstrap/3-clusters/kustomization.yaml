@@ -17,7 +17,7 @@ resources:
  ## Examples have been provided
 
  ### AWS
- - argocd/clusters/deploy/aws/aws0.yaml
+ #- argocd/clusters/deploy/aws/aws0.yaml
  #- argocd/clusters/deploy/aws/aws1.yaml
  #- argocd/clusters/deploy/aws/aws2.yaml
 
