@@ -17,12 +17,12 @@ resources:
  ## Examples have been provided
 
  ### AWS
- #- argocd/clusters/deploy/aws/aws0.yaml
+ - argocd/clusters/deploy/aws/aws0.yaml
  #- argocd/clusters/deploy/aws/aws1.yaml
  #- argocd/clusters/deploy/aws/aws2.yaml
 
  ### Azure
- - argocd/clusters/deploy/azure/azure0.yaml
+ #- argocd/clusters/deploy/azure/azure0.yaml
  - argocd/clusters/deploy/azure/azure1.yaml 
  
  ### vSphere
