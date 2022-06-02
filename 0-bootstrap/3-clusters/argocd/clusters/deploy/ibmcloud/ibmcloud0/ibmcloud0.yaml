@@ -41,11 +41,9 @@ spec:
 
         masters:
           count: 3
-#          machineType: bx2-4x16
 
         workers:
           count: 3
-#          machineType: bx2-4x16
 
         network:
           clusterCidr: 10.132.0.0/14
