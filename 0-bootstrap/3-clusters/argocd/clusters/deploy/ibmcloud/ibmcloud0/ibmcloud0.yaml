@@ -23,7 +23,7 @@ spec:
       values: |
         cluster: ibmcloud0
         type: ibm
-        imageName: img4.10.17-x86-64
+        imageName: img4.10.15-x86-64-appsub
 
         clusterSet: 
           name: "last-mile-gitops"
