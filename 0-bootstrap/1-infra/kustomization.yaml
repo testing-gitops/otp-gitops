@@ -63,6 +63,9 @@ resources:
  # Console link
  - argocd/consolelink.yaml
 
+ # MachinePools test
+ - argocd/machinepools.yaml
+
 patches:
 - target:
     group: argoproj.io

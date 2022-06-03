@@ -1,0 +1,39 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: machinesets
+  namespace: openshift-gitops
+  labels:
+    gitops.tier.layer: infra
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: openshift-gitops
+    server: azure0
+  project: infra
+  source:
+    path: machinepools
+    helm:
+      values: |
+          # cloudProvider.name set to aws, azure or vsphere
+          cloudProvider:
+            name: azure
+            managed: false
+          # only for "aws" or "azure" maybe "gcp"
+          cloud:
+            clusterName: azure0
+          # only for "vsphere" - ignored for other
+          vsphere:
+            networkName: ${VS_NETWORK}
+            datacenter: ${VS_DATACENTER}
+            datastore: ${VS_DATASTORE} 
+            cluster: ${VS_CLUSTER} 
+            server: ${VS_SERVER} 
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
