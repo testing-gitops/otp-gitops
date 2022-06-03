@@ -12,7 +12,7 @@ metadata:
 spec:
   destination:
     namespace: openshift-gitops
-    server: azure0
+    server: https://api.azure0.mcm-aiops-gitops.ibmsbaasonaz.com:6443
   project: infra
   source:
     path: machinepools
