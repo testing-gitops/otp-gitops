@@ -34,7 +34,7 @@ spec:
   destination:
     namespace: openshift-gitops
     server: https://kubernetes.default.svc
-  project: applications
+  project: policies
   source: # repoURL  and targetRevision populated by kustomize patches in 5-policies/kustomization.yaml
     path: 0-bootstrap/5-policies
   syncPolicy:
