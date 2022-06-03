@@ -22,13 +22,13 @@ resources:
  #- argocd/clusters/deploy/aws/aws2.yaml
 
  ### Azure
- #- argocd/clusters/deploy/azure/azure0.yaml
+ - argocd/clusters/deploy/azure/azure0.yaml
  #- argocd/clusters/deploy/azure/azure1.yaml 
  
  ### vSphere
  #- argocd/clusters/deploy/vsphere/vsphere-eltham.yaml
  ### IBM Cloud
-- argocd/clusters/deploy/ibmcloud/ibmcloud0/ibmcloud0.yaml
+ #- argocd/clusters/deploy/ibmcloud/ibmcloud0/ibmcloud0.yaml
 
  # Configure Submariner - Cross Cluster/Cloud communication
  #- argocd/clusters/submariner/create-managed-clusterset.yaml
