@@ -64,7 +64,7 @@ resources:
  - argocd/consolelink.yaml
 
  # MachinePools test
- #- argocd/machinepools.yaml
+ - argocd/machinepools.yaml
 
 patches:
 - target:
