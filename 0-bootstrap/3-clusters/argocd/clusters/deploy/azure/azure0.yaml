@@ -24,6 +24,9 @@ spec:
         cluster: azure0
         type: azure
         imageName: img4.9.25-x86-64-appsub
+        clusterSet:
+          name: "last-mile-gitops"
+          enabled: true
 
         powerState: Running
 
