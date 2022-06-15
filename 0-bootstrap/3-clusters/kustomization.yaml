@@ -22,7 +22,7 @@ resources:
  #- argocd/clusters/deploy/aws/aws2.yaml
 
  ### Azure
- - argocd/clusters/deploy/azure/azure0.yaml
+ #- argocd/clusters/deploy/azure/azure0.yaml
  #- argocd/clusters/deploy/azure/azure1.yaml 
  
  ### vSphere
