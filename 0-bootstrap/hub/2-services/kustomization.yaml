@@ -20,15 +20,15 @@ resources:
  #- argocd/instances/cert-manager.yaml
 
  # Secrets Managment
- - argocd/instances/sealed-secrets.yaml
- #- argocd/operators/external-secrets.yaml
- #- argocd/instances/external-secrets.yaml
+ #- argocd/instances/sealed-secrets.yaml
+ - argocd/operators/external-secrets.yaml
+ - argocd/instances/external-secrets.yaml
 
  # CICD
  #- argocd/operators/grafana-operator.yaml
  #- argocd/instances/grafana-instance.yaml
  # In OCP 4.7+ we need to install openshift-pipelines and possibly privileged scc to the pipeline serviceaccount
- - argocd/operators/openshift-pipelines.yaml
+ #- argocd/operators/openshift-pipelines.yaml
 
  # Service Mesh
  #- argocd/operators/elasticsearch.yaml
@@ -40,7 +40,7 @@ resources:
  # MultiCloud Management / Red Hat Advanced Cluster Management
  - argocd/operators/openshift-acm.yaml
  - argocd/instances/openshift-acm-instance.yaml
- - argocd/instances/openshift-acm-observability-instance.yaml
+ #- argocd/instances/openshift-acm-observability-instance.yaml
  - argocd/instances/openshift-gitopscluster-instance.yaml
  # Red Hat Advanced Cluster Management - Central Infrastructure Management
  #- argocd/instances/openshift-acm-cim.yaml
@@ -53,8 +53,8 @@ resources:
  #- argocd/instances/ibm-infra-automation-instance.yaml
 
  # Ansible Automation Platform
- - argocd/operators/ansible-automation-platform-operator.yaml
- - argocd/instances/ansible-automation-platform-instance.yaml
+ #- argocd/operators/ansible-automation-platform-operator.yaml
+ #- argocd/instances/ansible-automation-platform-instance.yaml
 
  # OpenShift Virtualization (Can be used to host instana instance)
  #- argocd/operators/openshift-virtualization.yaml
@@ -77,10 +77,10 @@ resources:
  #- argocd/instances/rhsso-integration-argocd-instance.yaml
 
  # Red Hat Quay Registry
- - argocd/operators/quay-registry.yaml
- - argocd/instances/quay-registry-instance.yaml
- - argocd/operators/quay-container-security.yaml
- - argocd/operators/quay-bridge-operator.yaml
+ #- argocd/operators/quay-registry.yaml
+ #- argocd/instances/quay-registry-instance.yaml
+ #- argocd/operators/quay-container-security.yaml
+ #- argocd/operators/quay-bridge-operator.yaml
 
 patches:
 - target:
