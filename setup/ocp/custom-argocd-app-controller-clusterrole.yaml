@@ -6,13 +6,6 @@ rules:
   - verbs:
       - '*'
     apiGroups:
-      - 'clusterview.open-cluster-management.io'
-    resources: 
-      - managedclusters
-      - managedclustersets
-  - verbs:
-      - '*'
-    apiGroups:
       - ''
     resources:
       - pods
