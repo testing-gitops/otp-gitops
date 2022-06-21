@@ -18,7 +18,7 @@ spec:
     server: https://kubernetes.default.svc
   project: clusters
   source:
-    path: clusters/deploy/external-secret/aws/
+    path: clusters/deploy/external-secrets/aws/
     helm:
       values: |
         cluster: aws1
