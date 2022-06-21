@@ -36,7 +36,7 @@ rules:
   - verbs:
       - '*'
     apiGroups:
-      - 'route.openshift.io'
+      - route.openshift.io
     resources:
       - routes
   - verbs:
@@ -329,7 +329,8 @@ rules:
     apiGroups:
       - external-secrets.io
     resources:
-      - 'clustersecretstores'
+      - clustersecretstores
+      - externalsecrets
   - verbs:
       - '*'
     apiGroups:
