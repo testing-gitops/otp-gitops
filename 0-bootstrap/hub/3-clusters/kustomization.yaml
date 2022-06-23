@@ -25,7 +25,15 @@ resources:
  ## Examples have been provided
 
  ### AWS
- #- argocd/clusterclaims/aws/aws-development.yaml
+ 
+ ## ClusterClaims
+ - argocd/clusterclaims/dev/aws/project-simple.yaml
+ #- argocd/clusterclaims/prod/aws/project-simple.yaml
+ #- argocd/clusterclaims/cicd/aws/project-cicd.yaml
+ #- argocd/clusterclaims/test/aws/project-easy.yaml
+
+
+ ## ClusterDeployments
  #- argocd/clusters/aws/aws0/aws0.yaml
  #- argocd/clusters/aws/aws0/1-infra/machinepools.yaml
  #- argocd/clusters/aws/aws1/aws1.yaml
