@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bootstrap-spokecluster-aws-aws5
+  name: bootstrap-spokecluster-cicd-project-cicd
   namespace: openshift-gitops
 spec:
   destination:
@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: 0-bootstrap/spokeclusters/aws/aws5/
+    path: 0-bootstrap/spokeclusters/cicd/project-cicd
     repoURL: ${GIT_BASEURL}/${GIT_ORG}/${GIT_GITOPS}
     targetRevision: ${GIT_GITOPS_BRANCH}
   syncPolicy:

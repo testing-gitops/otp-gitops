@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bootstrap-spokecluster-aws-aws1
+  name: bootstrap-spokecluster-test-project-easy
   namespace: openshift-gitops
 spec:
   destination:
@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: 0-bootstrap/spokeclusters/aws/aws1/
+    path: 0-bootstrap/spokeclusters/test/project-easy
     repoURL: https://github.com/testing-gitops/otp-gitops.git
     targetRevision: master
   syncPolicy:
