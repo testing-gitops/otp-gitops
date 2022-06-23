@@ -23,6 +23,7 @@ resources:
  ## Examples have been provided
 
  ### AWS
+ - argocd/clusterclaims/aws/aws-development.yaml
  #- argocd/clusters/aws/aws0/aws0.yaml
  #- argocd/clusters/aws/aws0/1-infra/machinepools.yaml
  #- argocd/clusters/aws/aws1/aws1.yaml
