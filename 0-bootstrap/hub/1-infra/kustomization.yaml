@@ -20,6 +20,7 @@ resources:
  - argocd/namespaces/namespace-openshift-acm-observability.yaml
  - argocd/namespaces/namespace-openshift-rhacm-credentials.yaml
  - argocd/namespaces/namespace-policies.yaml
+ - argocd/namespaces/namespace-rhacm-clusterpools.yaml
  # RHACM Metal Provisioner (Not required if Hub is running on Bare-Metal)
  #- argocd/namespaces/namespace-metal-provisioner.yaml
  
