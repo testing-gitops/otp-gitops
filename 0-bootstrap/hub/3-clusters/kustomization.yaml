@@ -5,7 +5,7 @@ resources:
  #- argocd/infra/providers/rhacm/aws/sealed-secrets/aws.yaml
  - argocd/infra/providers/rhacm/aws/external-secrets/aws.yaml 
  #- argocd/infra/providers/rhacm/azure/sealed-secrets/azure.yaml
- #- argocd/infra/providers/rhacm/azure/external-secrets/azure.yaml
+ - argocd/infra/providers/rhacm/azure/external-secrets/azure.yaml
  #- argocd/infra/providers/rhacm/vsphere/sealed-secrets/vsphere.yaml
  #- argocd/infra/providers/rhacm/rhocm/sealed-secrets/rhocm.yaml 
 
@@ -31,7 +31,6 @@ resources:
  #- argocd/clusterclaims/prod/aws/project-simple.yaml
  #- argocd/clusterclaims/cicd/aws/project-cicd.yaml
  #- argocd/clusterclaims/test/aws/project-easy.yaml
-
 
  ## ClusterDeployments
  #- argocd/clusters/aws/aws0/aws0.yaml
