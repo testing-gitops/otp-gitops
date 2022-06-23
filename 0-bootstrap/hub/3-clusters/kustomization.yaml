@@ -14,9 +14,9 @@ resources:
  #- argocd/clusters/import/ibmcloud/ibmcloud-syd.yaml
  #- argocd/clusters/import/vsphere/ocp-swinney-io.yaml
 
- ## Create ClusterPools
- - argocd/clusterpools/aws/aws-dev-pool/aws-dev-pool.yaml
- - argocd/clusterpools/aws/aws-prod-pool/aws-prod-pool.yaml 
+ ## ClusterPools - Seperated by Env and Cloud
+ #- argocd/clusterpools/aws/aws-dev-pool/aws-dev-pool.yaml
+ #- argocd/clusterpools/aws/aws-prod-pool/aws-prod-pool.yaml 
 
  ## Deploy Clusters
  ## Include the Clusters you wish to deploy below
