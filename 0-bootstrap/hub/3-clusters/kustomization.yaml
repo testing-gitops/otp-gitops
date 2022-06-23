@@ -15,8 +15,10 @@ resources:
  #- argocd/clusters/import/vsphere/ocp-swinney-io.yaml
 
  ## ClusterPools - Seperated by Env and Cloud
- #- argocd/clusterpools/aws/aws-dev-pool/aws-dev-pool.yaml
- #- argocd/clusterpools/aws/aws-prod-pool/aws-prod-pool.yaml 
+ - argocd/clusterpools/cicd/aws/aws-cicd-pool/aws-cicd-pool.yaml
+ - argocd/clusterpools/dev/aws/aws-dev-pool/aws-dev-pool.yaml
+ - argocd/clusterpools/test/aws/aws-test-pool/aws-test-pool.yaml
+ - argocd/clusterpools/aws/aws-prod-pool/aws-prod-pool.yaml 
 
  ## Deploy Clusters
  ## Include the Clusters you wish to deploy below
