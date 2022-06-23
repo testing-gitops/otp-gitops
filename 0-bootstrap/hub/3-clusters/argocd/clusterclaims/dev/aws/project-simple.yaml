@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: clusters-clusterclaim-aws-development
+  name: clusters-clusterclaim-aws-dev-project-simple
   annotations:
     argocd.argoproj.io/sync-wave: "360"
   labels:
@@ -21,6 +21,12 @@ spec:
     path: clusterclaims
     helm:
       values: |
-        clusterClaimName: aws-development
+        clusterClaimName: aws-dev-project-simple
 
         clusterPoolName: aws-dev-pool
+
+        managedCluster: 
+          status: "enabled"
+          managedRepo: https://github.com/testing-gitops/otp-gitops.git
+          environment: dev  
+          projectName: project-simple
