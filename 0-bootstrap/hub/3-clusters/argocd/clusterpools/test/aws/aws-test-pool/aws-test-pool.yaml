@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: clusters-clusterpools-aws-dev
+  name: clusters-clusterpools-test-aws
   annotations:
     argocd.argoproj.io/sync-wave: "310"
   labels:
