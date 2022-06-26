@@ -48,7 +48,7 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: turbonomic
     server: https://kubernetes.default.svc
-  - namespace: openshift-rhacm-credentials
+  - namespace: rhacm-credentials
     server: https://kubernetes.default.svc
   - namespace: open-cluster-management-observability
     server: https://kubernetes.default.svc
@@ -79,6 +79,8 @@ spec:
   - namespace: cert-manager
     server: https://kubernetes.default.svc
   - namespace: rhacm-clusterpools
+    server: https://kubernetes.default.svc
+  - namespace: rhacm-clusterclaims
     server: https://kubernetes.default.svc
   clusterResourceWhitelist:
   - group: ""
