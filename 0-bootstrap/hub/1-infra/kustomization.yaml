@@ -18,6 +18,7 @@ resources:
  - argocd/rbac/rbac-rhacm.yaml
  - argocd/namespaces/namespace-openshift-acm.yaml
  - argocd/namespaces/namespace-openshift-acm-observability.yaml
+ - argocd/namespaces/namespace-rhacm-credentials.yaml
  - argocd/namespaces/namespace-policies.yaml
  - argocd/namespaces/namespace-rhacm-clusterpools.yaml
  - argocd/namespaces/namespace-rhacm-clusterclaims.yaml
