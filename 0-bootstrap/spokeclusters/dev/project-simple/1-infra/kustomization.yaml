@@ -11,7 +11,7 @@ patches:
   patch: |-
     - op: add
       path: /spec/source/repoURL
-      value: https://github.com/one-touch-provisioning/otp-gitops-infra.git
+      value: https://github.com/testing-gitops/otp-gitops-infra.git
     - op: add
       path: /spec/source/targetRevision
       value: master
