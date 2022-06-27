@@ -93,6 +93,8 @@ spec:
     kind: ConsoleNotification
   - group: "console.openshift.io"
     kind: ConsoleLink
+  - group: "console.openshift.io"
+    kind: ConsolePlugin 
   - group: "machine.openshift.io"
     kind: MachineSet
   - group: "machineconfiguration.openshift.io"
