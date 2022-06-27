@@ -78,3 +78,10 @@ patches:
     - op: add
       path: /spec/sourceRepos/-
       value: https://github.com/testing-gitops/otp-gitops-policies.git
+- target:
+    group: argoproj.io
+    kind: Application
+  patch: |-
+    - op: replace
+      path: /spec/destination/namespace
+      value: openshift-gitops
