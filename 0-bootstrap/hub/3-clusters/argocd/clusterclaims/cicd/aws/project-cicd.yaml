@@ -26,7 +26,7 @@ spec:
         clusterPoolName: aws-cicd-pool
 
         managedCluster: 
-          status: "enabled"
+          status: "disabled"
           managedRepo: https://github.com/testing-gitops/otp-gitops.git
           environment: cicd
           projectName: project-cicd
