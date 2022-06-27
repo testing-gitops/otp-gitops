@@ -29,7 +29,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "300"
   labels:
-    gitops.tier.layer: gitops
+    gitops.tier.layer: clusters
 spec:
   destination:
     namespace: openshift-gitops
