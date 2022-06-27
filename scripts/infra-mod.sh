@@ -57,7 +57,7 @@ set -e
 
 echo "Applying Infrastructure updates"
 
-pushd ${SCRIPTDIR}/../0-bootstrap/1-infra
+pushd ${SCRIPTDIR}/../0-bootstrap/hub/1-infra
 
 ocpversion=$(oc get clusterversion version | grep -v NAME | awk '{print $2}')
 a=( ${ocpversion//./ } )
@@ -157,10 +157,10 @@ popd
 pushd "${SCRIPTDIR}/.."
 
 echo "Updating Git"
-git add .
+#git add .
 
-git commit -m "Editing infrastructure definitions"
+#git commit -m "Editing infrastructure definitions"
 
-git push origin
+#git push origin
 
 popd

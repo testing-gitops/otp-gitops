@@ -18,15 +18,15 @@ spec:
     path: machinesets
     helm:
       values: |
-          infrastructureId: "${INFRASTRUCTURE_ID}"
+          infrastructureId: rhacm-kgpjw
           # cloudProvider.name set to aws, azure or vsphere
           cloudProvider:
-            name: "${PLATFORM}"
-            managed: ${MANAGED}
+            name: azure
+            managed: false
           # only for "aws" or "azure" maybe "gcp"
           cloud:
-            region: ${REGION}
-            image: ${IMAGE_NAME}
+            region: australiaeast
+            image: 
           # only for "vsphere" - ignored for other
           vsphere:
             networkName: ${VS_NETWORK}
