@@ -29,7 +29,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "500"
   labels:
-    gitops.tier.layer: policies
+    gitops.tier.layer: gitops
 spec:
   destination:
     namespace: openshift-gitops
