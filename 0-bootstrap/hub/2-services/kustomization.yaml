@@ -38,7 +38,7 @@ resources:
  #- argocd/instances/openshift-service-mesh-instance.yaml
 
  # MultiCloud Management / Red Hat Advanced Cluster Management
- - argocd/operators/openshift-acm.yaml
+ #- argocd/operators/openshift-acm.yaml
  #- argocd/instances/openshift-acm-instance.yaml
  #- argocd/instances/openshift-acm-observability-instance.yaml
  #- argocd/instances/openshift-gitopscluster-instance.yaml
